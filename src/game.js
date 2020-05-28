@@ -7,6 +7,6 @@ initView();
 
 const model = new Model();
 
-drawGame(model);
 model.init();
+drawGame(model);
 controller(model);
