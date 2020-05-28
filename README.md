@@ -4,9 +4,9 @@
 > **Ne restez pas bloqués bêtement, demander de l'aide**
 > Ne copier pas le code de votre voisin, ça se voit.
 
-Nom/Prénom: `.......`
+Nom/Prénom: `Alexis JAMAL`
 
-Lien du codesandbox: `.......`
+Lien du codesandbox: `https://codesandbox.io/s/infallible-chatelet-3i1yw?file=/src/gameOfLife/model.js`
 
 > Pour générer un codesandbox associé à votre code, [suiver cette doc](https://codesandbox.io/docs/importing#import-from-github)
 
@@ -20,11 +20,15 @@ Il est inventé par [John Horton Conway](https://fr.wikipedia.org/wiki/John_Hort
 1. Expliquer le design pattern MVC à l'aide d'un schéma à insérer directement ici. 
 Utiliser un outils commde Dia pour le représenter. Je veux **votre** schéma, pas un de ceux qu'on peut trouver sur le net.
 
+![alt text](https://github.com/PolytechLyon/2020-isi3-mvc-AlexisJamal/blob/master/SchemaMVC.png)
+
+Pour faire simple la vue est ce que voit l'utilisateur, le modèle contient l'intelligence de l'application, dans notre cas le jeu, et le contrôleur va permettre la comunication entre les deux, par exemple avec les boutons start, stop et reset. On a donc le modèle qui met à jour la vue, la vue qui communique les actions utilisateur au contrôleur et le contrôleur qui modifie le modèle.
+
 2. Expliquer ce pattern à l'aide en complétant ce texte.
 
-Le pattern MVP, vise à découper le `.......`, de la `.......` et du `.......` afin de rendre le code plus `.......`.
-Les responsabilités ne sont alors plus `.......`.
-On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le `.......`.
+Le pattern MVP, vise à découper le `modèle`, de la `vue` et du `contrôleur` afin de rendre le code plus `ordonné`.
+Les responsabilités ne sont alors plus `centralisées`.
+On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le `modèle`.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
 
@@ -42,10 +46,12 @@ En quoi cela relève du design pattern ObserverObservable.
 
 1. Expliquer votre implémentation:
 
-L'usage d'une callback permet ici de `.......` afin dire à la _View_ de se redessiner.
-L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la `.......` il peut notifier la `.......`.
+L'usage d'une callback permet ici de `notifier` afin dire à la _View_ de se redessiner.
+L'objet _Model_ n'a pas de lien avec `View` pourtant grâce à la `méthode updated` il peut notifier la `View`.
 
 2. Insérer ici un UML montrant le pattern Observer-Observable liés aux objects de ce TP.
+
+![alt text](https://github.com/PolytechLyon/2020-isi3-mvc-AlexisJamal/blob/master/SchemaObserverObservable.png)
 
 ## Optionel
 
